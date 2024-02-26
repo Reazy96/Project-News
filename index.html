@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get your News</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>News App</h1>
+      <section>
+        <div>
+          <h2>Suchbegriff</h2>
+          <input class="input" type="text" />
+        </div>
+        <div>
+          <h2>Sprache</h2>
+          <select name="language" id="language">
+            <option value="ar">Arabisch</option>
+            <option value="de">Deutsch</option>
+            <option value="en">Englisch</option>
+            <option value="es">Spanisch</option>
+            <option value="fr">Französisch</option>
+            <option value="he">Hebräisch</option>
+            <option value="it">Italienisch</option>
+            <option value="nl">Niederländisch</option>
+            <option value="no">Norwegisch</option>
+            <option value="pt">Portugiesisch</option>
+            <option value="ru">Russisch</option>
+            <option value="sv">Schwedisch</option>
+            <option value="zh">Chinesisch</option>
+          </select>
+        </div>
+        <div>
+          <h2>Sortieren nach</h2>
+          <select name="sort" id="sort">
+            <option value="relevancy">Relevanz</option>
+            <option value="popularity">Popularität</option>
+            <option value="publishedAt">zuletzt veröffentlicht</option>
+          </select>
+        </div>
+
+        <button class="btn">Suchen</button>
+      </section>
+    </header>
+
+    <main>
+      <section class="output-news"></section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
