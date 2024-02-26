@@ -5,13 +5,57 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: rgba(0, 0, 0, 0.729);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
 h2 {
   margin-bottom: 10px;
+  color: white;
 }
 h3 {
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 
+.btn {
+  padding: 20px 30px;
+  min-width: 200px;
+  align-self: center;
+  border-radius: 20px;
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  border: none;
+  margin-bottom: 50px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: rgb(170, 114, 9);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+select:focus,
+input:focus {
+  outline: none;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -24,7 +68,16 @@ section input,
 section select {
   padding: 10px;
   border-radius: 20px;
-  border: 2px solid orange;
+  border: 5px solid orange;
+  text-align: center;
+  appearance: none;
+  width: 200px;
+}
+section select {
+  background-image: url(./assets/512px-Eo_circle_orange_arrow-down.svg.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 160px;
 }
 
 .output-news {
@@ -39,7 +92,12 @@ section select {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  background-color: rgba(0, 0, 0, 0.519);
+  background-color: rgba(0, 0, 0, 0.714);
+  border-radius: 20px;
+  padding: 20px 10px;
+}
+.output-news article p {
+  line-height: 35px;
 }
 
 img {
@@ -52,4 +110,11 @@ a {
   text-decoration: none;
   padding: 15px 30px;
   background-color: orange;
+  border-radius: 10px;
+  color: white;
+}
+
+main {
+  padding: 40px;
+  color: white;
 }
